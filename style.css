@@ -1,0 +1,100 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #A50044, #004D98);
+    padding: 40px 20px;
+    color: white;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.role {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #A50044;  /* Barca red */
+}
+
+p, li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "✔ ";
+    color: #004D98;  /* Barca blue */
+}
+
+/* Links */
+a {
+    color: #004D98;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #A50044;
+    color: white;
+}
+
+/* Social Icons - Small circular style */
+.social-icon {
+    width: 20px;            /* small size */
+    height: 20px;
+    border-radius: 50%;     /* make circular */
+    object-fit: cover;      /* fit inside circle */
+    vertical-align: middle; /* align with text */
+    margin-right: 8px;      /* space between icon and text */
+    transition: transform 0.3s; /* hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2);  /* enlarge on hover */
+}
